@@ -25,6 +25,7 @@ from langchain.llms.self_hosted import SelfHostedPipeline
 from langchain.llms.self_hosted_hugging_face import SelfHostedHuggingFaceLLM
 from langchain.llms.stochasticai import StochasticAI
 from langchain.llms.writer import Writer
+from langchain.llms.bittensor import BittensorLLM
 
 __all__ = [
     "Anthropic",
@@ -53,6 +54,7 @@ __all__ = [
     "PromptLayerOpenAIChat",
     "StochasticAI",
     "Writer",
+    "BittensorLLM"
 ]
 
 type_to_cls_dict: Dict[str, Type[BaseLLM]] = {
@@ -79,4 +81,5 @@ type_to_cls_dict: Dict[str, Type[BaseLLM]] = {
     "self_hosted_hugging_face": SelfHostedHuggingFaceLLM,
     "stochasticai": StochasticAI,
     "writer": Writer,
+    "bittensorllm": BittensorLLM
 }
